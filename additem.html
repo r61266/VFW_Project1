@@ -6,25 +6,26 @@
 
 <html>
 	<head>
-    	<meta charset="utf-8" />
+    	<Title>Holiday Food Checklist</Title>
+        <meta charset="utf-8" />
     	<meta name="description" content="My very first app name the Recipe Pad" />
     	<meta name="keywords" content="HTML, Recipe, Pad" />
     	<meta name="robots" content="index, follow" />
     	<meta name="HandheldFriendly" content="True" />
     	<meta name="MobileOptimized" content="320" />
     	<meta name="viewport" content="user-scalable=yes, width=device-width" /
-    	<title>Holiday Checklist</title>
+    	
  	</head>
 	<body>
-    	<h1>Holiday Checklist</h1>
+    	<h1>Holiday Food Checklist</h1>
         <nav>
         	<a href="#" id="clear">Clear Stored Data</a>
             <a href="#" id="displayLink">Display Data</a>
+        </nav>
         <form action="#" method="post">
         	<fieldset>
             	<legend>Information</legend>
-                	<li>
-                    	<label for="Holiday">Holiday Checklist:</label>
+                	<label for="Holiday">Holiday Checklist:</label>
                        <ul>
                         <select id="Holiday">
                             	<option value="Christmas">Christmas</option>
@@ -36,26 +37,34 @@
                            		<option value="Fourth of July">Fourth of July</option>
                          	</optgroup>
                          </select>
-                    </li>
+                    
                     	</ul>
-                   	<li>
-                    	<label for="info">Recipe Information:</label>
+                   			<label for="info">Food Checklist:</label>
                         <ul>
                         	<li><label for="app">Appetizer:</label><input type="text" id="app"/></li>
                             <li><label for="mname">Main Meal:</label><input type="text" id="mname"/></li>
                         </ul>
-                    </li>
-                    <li>Side Dishes:
+                     <li>Side Dishes:
                     	<ul>
                         	<li><input type="checkbox" checked value="Macaroni and Cheese" id="macncheese"/><label for="macncheese">Macaroni and Cheese								 								</label></li>
                         	<li><input type="checkbox" value="Salad" id="salad"/><label for="salad">Salad</label></li>
                         	<li><input type="checkbox" value="Macaroni Salad" id="macaronisalad"/><label for="macaronisalad">Macaroni Salad</label></li>
                         	<li><input type="checkbox" value="Casserole" id="casserole"/><label for="casserole">Casserole</label></li>
                         	<li><input type="checkbox" value="Mashed Potatoes" id="mashedpotatoes"/><label for="mashedpotatoes">Mashed Potatoes</label></li>
-                    </li> 
+                     	</ul>
+ 						<ul>                  
+                   			<li><label for="date">Date Updated:</label><input type="date" id="date"/></li>
+                   			<li><label for="#ofpeople">Amount of People</label><input type="range" min="0" max="30" id="#ofpeople"/></li>
+                   			<li><label for="notes">Additional Notes:</label><textarea id="notes"></textarea></li>
                         </ul>
-                   <li><label for="date">Date Updated:</label><input type="date" id="date"/></li>
-                   <li><label for="#ofpeople">Amount of People</label><input type="range" min="0" max="30" id="#ofpeople"/></li>
+            	</fieldset>
+            <input type="submit" value="Save Checklist"/>
+        </form>
+    </body>
+</html>
+                   
+                        
+                   
   
  					
                     
@@ -76,6 +85,4 @@
 
 
 
-		</fieldset>
-	</body>
-</html> 
+	
